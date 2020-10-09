@@ -1,0 +1,43 @@
+{
+    "name": "__MSG_extName__",
+    "version": "0.1",
+    "description": "Chatter Enhancement Suite",
+    "manifest_version": 2,
+    "default_locale": "en",
+    "icons": {"16": "images/icon16.png",
+              "48": "images/icon48.png",
+              "128": "images/icon128.png",
+              "256": "images/icon256.png"},
+    "permissions": [
+        "contextMenus",
+        "cookies",
+        "tabs",
+        "activeTab",
+        "https://*.my.salesforce.com/*",
+        "https://*.lightning.force.com/*"
+    ],
+    "page_action": {
+        "default_icon": {
+            "16": "images/icon16.png",
+            "24": "images/icon24.png",
+            "32": "images/icon32.png"
+        },
+        "default_title": "__MSG_tooltipName__"
+    },
+    "background": {
+        "scripts": ["js/background.js"],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "css": ["styles/styles.css"],
+            "matches": [
+                "https://*.my.salesforce.com/*",
+                "https://*.lightning.force.com/*"
+            ],
+            "js": [
+                "js/content-script.js"
+            ]
+        }
+    ]
+  }

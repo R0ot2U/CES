@@ -1,0 +1,10 @@
+{
+    "extName": {
+        "message": "CES",
+        "description": "Extension name." 
+    },
+    "tooltipName": {
+        "message": "Suite de mejora de Chatter",
+        "description": "Extension tooltip"
+    }
+}
