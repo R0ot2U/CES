@@ -25,7 +25,9 @@
         "default_title": "__MSG_tooltipName__"
     },
     "background": {
-        "scripts": ["js/background.js"],
+        "scripts": ["js/jquery.js",
+                    "js/background.js"
+                    ],
         "persistent": false
     },
     "content_scripts": [
@@ -36,6 +38,7 @@
                 "https://*.lightning.force.com/*"
             ],
             "js": [
+                "js/jquery.js",
                 "js/content-script.js"
             ]
         }

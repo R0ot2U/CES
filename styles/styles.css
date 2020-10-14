@@ -1,6 +1,18 @@
-.userTag {
-    border-radius:25px;
+.userTag.userPost {
+    border-radius:20px;
     border: 2px solid #73AD21;
-    padding:5px;
+    padding:3px;
     font: 13px Arial, sans-serif;
-}
+    margin: 5px;
+  }
+
+.userTag.userComment {
+    border-radius:20px;
+    border: 2px solid #73AD21;
+    padding:3px;
+    font: 13px Arial, sans-serif;
+    margin: 5px;
+    position: absolute;
+    z-index: 100 !important;
+    top:0;
+  }
